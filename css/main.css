@@ -1,0 +1,460 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  text-align: justify;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 10em;
+}
+
+.wrapper3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 10em;
+}
+
+hr {
+  width: 3rem;
+  color: rgb(95, 95, 95);
+  border: 1px solid;
+  margin-bottom: 10rem;
+}
+
+/* Navigation */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+nav {
+  margin: 3.9rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3.9em;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+nav ul li a.active:before {
+  position: absolute;
+  content: "";
+  width: 35%;
+  height: 1px;
+  border-bottom: 2px solid black;
+  bottom: -6px;
+}
+
+nav ul li a:before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  border-bottom: 2px solid rgb(132, 132, 132);
+  bottom: -6px;
+  transition: width 0.3s;
+}
+
+/* Hero Section */
+
+main {
+  display: flex;
+  gap: 8em;
+  margin-top: 5em;
+}
+
+.left-col {
+  width: 55%;
+}
+
+.right-col {
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-top: 7rem;
+  line-height: 6rem;
+}
+
+.globe {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  margin: 0;
+  transform: scale(1.4);
+}
+
+.globe:hover {
+  transform: scale(1.7);
+}
+
+span {
+  font-size: 17rem;
+  position: relative;
+}
+
+.subhead {
+  font-size: 1.5rem;
+  width: 75%;
+  margin: 0;
+}
+
+.cta-btn {
+  margin-top: 9em;
+}
+
+a.primary-cta {
+  text-decoration: none;
+}
+
+.primary-cta {
+  background-color: black;
+  padding: 0.5em 1em;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px 5px rgb(95, 95, 95);
+  transition: color 500ms;
+}
+
+/* Right column image */
+
+.right-col {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas:
+    "left"
+    "left";
+}
+
+.card1 {
+  grid-area: left;
+  border-radius: 0.8rem;
+  padding: 1.1em;
+  display: flex;
+  align-items: end;
+  background-size: 100%;
+  height: 50em;
+  width: 31em;
+  background-image: url("../img/hero.JPG");
+  transition: background-size 800ms;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 3px 3px 5px rgb(95, 95, 95);
+}
+
+.card-details {
+  background: white;
+  border-radius: 0.6rem;
+  padding: 0.15em 1em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 800ms;
+}
+
+.card-details a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  pointer-events: none;
+}
+
+.card-details p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+p.skill-summary {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  padding: 1em 0 1em 0;
+}
+
+.course {
+  font-weight: 500;
+}
+
+/* About Section */
+
+.wrapper2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 10em;
+  display: flex;
+}
+
+.left-col2 {
+  width: 50%;
+}
+
+.right-col2 {
+  width: 50%;
+}
+
+h1.heading {
+  font-size: 8.6rem;
+}
+
+p.about {
+  font-size: 1.5rem;
+  width: 75%;
+  line-height: 2.2em;
+}
+
+strong.orange {
+  color: orange;
+}
+
+strong.green {
+  color: green;
+}
+
+strong.blue {
+  color: blue;
+}
+
+.card2 {
+  grid-area: left;
+  margin-left: 10em;
+  border-radius: 0.8rem;
+  padding: 1.1em;
+  display: flex;
+  align-items: end;
+  background-size: 110%;
+  height: 50em;
+  width: 31em;
+  background-image: url("../img/who.JPG");
+  transition: background-size 800ms;
+  transform: rotate(5deg);
+  box-shadow: 3px 3px 5px rgb(95, 95, 95);
+}
+
+/* Skillset */
+
+.skillset {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8em;
+}
+
+.skills1 {
+  width: 50%;
+}
+
+.skills2 {
+  width: 35%;
+}
+
+.skillset ul li {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  font-size: 2.6rem;
+  padding-top: 1.5em;
+  display: flex;
+  gap: 30px;
+}
+
+.skillset ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+svg {
+  width: 40px;
+  height: 40px;
+  padding: 0.1em;
+  display: flex;
+  align-items: center;
+}
+
+.blurb1 p {
+  text-align: center;
+  margin-top: 11em;
+}
+
+i {
+  font-size: 2.5rem;
+}
+
+/* Blurb */
+
+.wrapper4 {
+  max-width: 1350px;
+  margin: 0 auto;
+  margin-bottom: 10em;
+  text-align: center;
+}
+
+.click {
+  font-weight: 150;
+  font-size: 6rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  height: 30em;
+}
+
+.wrapper5 {
+  background-color: black;
+  margin: 0 auto;
+  margin-bottom: 10em;
+  padding: 0;
+  padding-bottom: 0.3em;
+  justify-content: space-between;
+}
+.top-side {
+  max-width: 1350px;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+  padding: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: end;
+}
+
+.logop {
+  color: white;
+  font-size: 2rem;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+
+.logopq {
+  color: white;
+  font-size: 2rem;
+  line-height: 1em;
+  margin-bottom: 1.5em;
+}
+
+.logopp {
+  color: white;
+  font-size: 1.7rem;
+  line-height: 1em;
+  margin-bottom: 1.5em;
+}
+
+.email {
+  display: flex;
+  gap: 2em;
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  max-width: 1350px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Micro Interactions */
+
+nav ul li a:hover::before {
+  width: 35%;
+  opacity: 50%;
+}
+
+.primary-cta:hover {
+  background: white;
+  color: black;
+  transition: color 500ms;
+  box-shadow: 5px 5px 5px rgb(95, 95, 95);
+}
+
+.card1:hover {
+  background-size: 110%;
+  transition: background-size 800ms;
+  transform-origin: center center;
+}
+
+.card2:hover {
+  background-size: 120%;
+  transition: background-size 800ms;
+}
+
+.card1:hover .card-details {
+  transform: translateY(-20px);
+}
+
+.skillset ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Into Animation */
+/*
+.overlay {
+  position: absolute;  
+  z-index: 999;
+  background: white;
+  width: 100%;
+  height: 100%;
+  animation: reveal 1s ease-in forwards;
+  transform-origin: bottom ;
+}
+
+@keyframes reveal {
+    from {
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(0);
+    }
+} */
+
+main {
+  animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  transform: scale(0.4);
+}
+
+@keyframes growIn {
+  to {
+    transform: scale(1);
+  }
+}

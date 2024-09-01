@@ -1,0 +1,297 @@
+html   {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 10em;
+}
+
+.presentations {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 10em;
+}
+
+hr {
+    width: 3rem;
+    color: rgb(95, 95, 95);
+    border: 1px solid;
+    margin-bottom: 10rem;
+    opacity: 50%;
+}
+
+
+/* Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+nav {
+    margin: 4rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3.9em;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+nav ul li a.active:before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid rgb(132, 132, 132);
+    bottom: -6px;
+    transition: width .3s;
+}
+
+/* Hero Section */
+
+main {
+    display: flex;
+    gap: 8em;
+    margin-top: 5em;
+}
+
+.left-col {
+    width: 50%;
+}
+
+.right-col {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 7rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-top: 7rem;
+    line-height: 6rem;
+    width: 100%;
+}
+
+.subhead {
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0;
+    line-height: 2.5rem;
+}
+
+.cta-btn {
+    margin-top: 9em;
+}
+
+a.primary-cta  {
+    text-decoration: none;
+}
+
+.primary-cta {
+    background-color: black;
+    padding: 0.5em 1em;
+    font-size: 1.7rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5em;
+    box-shadow: 3px 3px 5px rgb(95, 95, 95);
+    transition: color 500ms;
+}
+
+.right-col {
+    flex-grow: 1;
+}
+
+.about-image {
+    width: 50rem;
+    height: 50rem;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.0);
+    margin: 0;
+}
+
+.about-image:hover {
+    transform: scale(1.15);
+}
+
+/* About */
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 10em;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+table {
+    font-size: 2rem;
+    border-spacing: 3rem;
+    border: 0.1px solid;
+    line-height: 1.8rem;
+}
+
+tr {
+    text-align: left;
+    gap: 5rem; 
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    font-weight: medium;
+    font-size: smaller;
+    line-height: 2rem;
+}
+
+.tables {
+    list-style-type: square;
+}
+
+li {
+    line-height: 2.5rem;
+}
+
+.institution {
+    font-weight: 600;
+}
+
+.skillss {
+    font-size: 1.7rem;
+    list-style-type: square;
+}
+
+
+/* Micro Interactions */
+
+nav ul li a:hover::before {
+    width: 35%;
+    opacity: 50%;
+}
+
+main {
+    animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(.4);
+}
+
+.primary-cta:hover {
+    background: white;
+    color: black;
+    transition: color 500ms;
+    box-shadow: 5px 5px 5px rgb(95, 95, 95);
+}
+
+@keyframes growIn {
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    height: 30em;
+}
+
+.wrapper5 {
+    background-color: black;
+    margin: 0 auto;
+    margin-bottom: 10em;
+    padding: 0;
+    padding-bottom: 0.3em;
+    justify-content: space-between;
+}
+.top-side {
+    max-width: 1350px;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    padding: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: end;
+}
+
+.logop {
+    color: white;
+    font-size: 2rem;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+}
+
+.logopq {
+    color: white;
+    font-size: 2rem;
+    line-height: 1em;
+    margin-bottom: 1.5em;
+}
+
+.logopp {
+    color: white;
+    font-size: 1.7rem;
+    line-height: 1em;
+    margin-bottom: 1.5em;
+}
+
+.email {
+    display: flex;
+    gap: 2em;
+    margin: 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    max-width: 1350px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+    padding: .1em;
+    display: flex;
+    align-items: center;
+}
